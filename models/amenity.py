@@ -1,15 +1,20 @@
 #!/usr/bin/python3
 """
-Module for Amenity class
+    Amenity modules
 """
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Custom amenity class
-
-    Attributes:
-        name(str): amenity name
-
+    """
+        class Amenity inherit from base
+        Attribute:
+            name (str)
     """
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """
+            str
+        """
+        super().__init__(*args, **kwargs)
